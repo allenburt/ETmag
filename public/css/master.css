@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 0.88em "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5em;
+  color: #4b4c50; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, sans-serif; }
+
+h1 {
+  margin-top: 0.413em;
+  margin-bottom: 0.275em;
+  line-height: 1.376em;
+  font-size: 218.0%;
+  font-weight: normal; }
+
+h2 {
+  margin-top: 1.372em;
+  margin-bottom: 0.457em;
+  line-height: 1.829em;
+  font-size: 164%;
+  font-weight: normal; }
+
+h3 {
+  margin-top: 1.552em;
+  margin-bottom: 0.517em;
+  line-height: 1.034em;
+  font-size: 145%;
+  font-weight: normal; }
+
+h4 {
+  margin-top: 2.542em;
+  margin-bottom: 0em;
+  line-height: 1.271em;
+  font-size: 118%; }
+
+ol,
+p,
+pre,
+ul {
+  margin: 0;
+  margin-bottom: 1.5em; }
+
+li {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  line-height: 1.5em;
+  font-size: 100%; }
+
+pre {
+  padding: 0.75em 1em;
+  overflow: auto; }
+
+img {
+  border: none; }
+
+div#container {
+  width: 54em;
+  margin: 0 auto; }
+  div#container div#header {
+    padding: 1em; }
+  div#container div.breadcrumb {
+    padding: 0.5em 1.1em;
+    font-size: 0.909em; }
+  div#container div#content {
+    width: 37em;
+    float: left;
+    padding: 1px 1em; }
+  div#container div#sidebar {
+    width: 12em;
+    margin-left: 40em;
+    padding: 1px 1em; }
+  div#container div#footer {
+    clear: both;
+    padding: 0 1em; }
+    div#container div#footer p {
+      width: 37em;
+      margin: 0;
+      padding: 1em 0;
+      text-align: right; }
+
+body {
+  background: #f5f6fa; }
+  body.home h1 {
+    margin-top: 0.688em;
+    margin-bottom: -0.688em;
+    line-height: 1.376em;
+    font-size: 218.0%; }
+
+div#header p.title,
+div#header p.subtitle {
+  margin: 0;
+  line-height: 1.2em;
+  font-weight: normal; }
+div#header p.title {
+  font-size: 327%;
+  text-shadow: -1px 2px 1px #d3d4d8; }
+div#header p.subtitle {
+  font-size: 1em;
+  color: #a0a1a5;
+  text-shadow: 0 -1px 1px white; }
+
+div#content {
+  position: relative;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background-color: white; }
+  div#content div.date {
+    position: absolute;
+    right: 40em;
+    top: 4.5em;
+    text-align: right;
+    color: #a0a1a5;
+    text-shadow: 0 -1px 1px white; }
+  div#content h2 {
+    background: #e4e5e9;
+    background: rgba(211, 212, 216, 0.4) url(/lines.png) repeat;
+    margin-left: -1.073em;
+    margin-right: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-shadow: 0 1px 0 white; }
+  div#content ol,
+  div#content ul {
+    margin-left: 1.5em; }
+  div#content img {
+    max-width: 100%;
+    margin-bottom: 1.5em; }
+  div#content code,
+  div#content pre {
+    background-color: #f5f6fa; }
+  div#content code {
+    padding: 1px 3px; }
+  div#content pre {
+    border-left: 0.4em solid #e4e5e9; }
+  div#content ol.pages {
+    margin-left: 0; }
+    div#content ol.pages li {
+      position: relative;
+      margin-left: -1.5em;
+      padding-left: 1.5em;
+      background-color: rgba(255, 255, 255, 0.8);
+      list-style: none; }
+      div#content ol.pages li h2 {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        background: none; }
+      div#content ol.pages li div.date {
+        top: 3.75em;
+        right: 39em; }
+      div#content ol.pages li h3 + div.date {
+        top: 2.25em; }
+  div#content p.read_more {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    line-height: 1.65em;
+    font-size: 90.9%; }
+  div#content div.categories {
+    margin-left: -1em;
+    margin-right: -1em;
+    border-top: 1px solid #ebecf0;
+    padding: 0.5em 1em;
+    background: #f5f6fa; }
+    div#content div.categories a {
+      margin-right: 0.25em; }
+  div#content div#disqus_thread img {
+    max-width: none; }
+  div#content div#disqus_thread ul#dsq-comments {
+    margin-left: 0; }
+
+div#sidebar {
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9); }
+  div#sidebar h2 {
+    margin-top: 2.1em;
+    margin-bottom: 0.9em;
+    line-height: 1.5em;
+    font-size: 100%;
+    font-weight: bold; }
+  div#sidebar ul.menu {
+    list-style: none; }
+  div#sidebar div.feed,
+  div#sidebar div.social {
+    margin: 1.5em 0; }
+  div#sidebar div.feed a {
+    padding: 6px 0 6px 36px;
+    background: url(/feed-icon.png) no-repeat left center; }
+  div#sidebar div.social img {
+    margin-right: 0.25em;
+    padding: 2px; }
+    div#sidebar div.social img:hover {
+      padding: 1px;
+      border: 1px solid #d3d4d8; }
+
+<!-- page cached: 2010-04-08 16:49:41 -->
+
+

@@ -1,0 +1,44 @@
+.one-col {
+  @include column($one-col-columns);
+  margin: 19px;
+}
+
+.two-col {
+  @include column($blueprint-grid-columns);
+  margin-left: auto;
+  
+  .first {
+    @include column($two-col-first-column);
+    margin: 19px;
+  }
+  
+  .second {
+    @include column($two-col-second-column,true);
+    margin: 19px;
+  }
+}
+
+.three-col {
+  @include column($blueprint-grid-columns);
+  margin-left: auto;
+  
+  .first {
+    @include column($three-col-first-column);
+    margin: 19px;
+  }
+  
+  .second {
+    @include column($three-col-second-column);
+    margin: 19px;
+  }
+
+  .third {
+    @include column($three-col-third-column,true);
+    margin: 19px;
+  }
+  .arrow {
+    background: url(/img/right-arrow-black.png) no-repeat;
+    margin-left: 0px;
+    padding-left: 19px;
+  }
+}

@@ -1,0 +1,54 @@
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
+
+$blueprint-grid-columns: 24;
+$blueprint-container-size: 950px;
+$blueprint-grid-margin: 0px;
+
+$one-col-columns: 23;
+
+$two-col-columns: 24;
+$two-col-first-column: 11;
+$two-col-second-column: 11;
+
+$three-col-columns: 24;
+$three-col-first-column: 7;
+$three-col-second-column: 7;
+$three-col-third-column: 7;
+
+// Exposure article template variables
+$article-header-opacity: 0.7;
+$article-header-height: 90px;
+
+$article-body-background: #000000;
+$article-body-color: #ffffff;
+
+$article-content-background: #ffffff;
+$article-content-color: #000000;
+
+$pre-reg-background: #ececec;
+$pre-reg-color: #000000;
+
+$article-font:  Helvetica,Arial,sans-serif;
+
+$font-size-small: 14px;
+$font-size-regular: 18px;
+$font-size-medium: 20px;
+$font-size-large: 22px;
+$font-size-xl: 28px;
+
+
+h1 {
+  font-size: $font-size-large;
+  font-weight: bold;
+  padding: 25px 15px 25px 15px;
+}
+
+h3 {
+  font-size: $font-size-medium;
+  padding: 5px 5px 5px 5px;
+}
+
+// Use this to calculate the width based on the total width.
+// Or you can set !blueprint_grid_width to a fixed value and unset !blueprint_container_size -- it will be calculated for you.
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;

@@ -1,0 +1,9 @@
+._*
+.bundle
+.DS_Store
+.rvmrc
+config/config.yml
+config/deploy.rb
+db/*.db
+public/cache
+compass/.sass-cache

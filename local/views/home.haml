@@ -1,0 +1,58 @@
+#bg_img_container.hidden
+  %img#bg_img{:src => '/img/bg_img.jpg'}
+#home_frame_container
+  #home_frame_wrapper
+    #home_frame_logo.logo_container
+      %img{:src => "/img/logo.png"}
+    #home_frame
+      #home_frame_text
+        %br
+        %br
+        %p.title Epic Adventure Trips and Activities at Exclusive Prices
+        %br
+        %p Pre-Register as a member of EPICthrills and receive an exclusive invitation to the launch of our beta site.
+        %input#email{ :type => 'text',
+                :name => 'email_address',
+                :placeholder => 'Email address',
+                :size => 25 }
+        %input#pre_reg_button{:name => "commit", :type => "submit", :value => "Pre-Register"}
+        %a#pre_register_link.hidden{:href => "#register_form_container"} Pre-Register
+
+#hidden
+  #register_form_container
+    %span.logo_container
+      %img{:src => "/img/logo_white.png"}
+    %span
+      %p.title.left Thank You!
+      %p.left
+        Congratulations! Now you've "got a guy" ready to hook you up with the sickest adventure |
+        trips around. Be on the lookout for a confirmation email in your Inbox and we'll let you |
+        know when we launch our first sales!
+      %p.left
+        In the mean time, check out our latest adventure articles at
+        %a{ :href => '/exposures' } EXPOSURES Magazine
+
+      %p.title.left Invite Others
+      %p.left
+        Know anyone else that would be interested in exclusive adventures? Share the wealth and |
+        spread the word!
+    #share-via-wrapper-popup
+      #share-via-popup
+        %a{ :href => "http://twitter.com/epicthrills"}
+          %img{ :src => "/twitter.png", :alt => "Twitter" }
+          Twitter
+        %a{ :href => "http://facebook.com" }
+          %img{ :src => "/facebook.png", :alt => "Facebook" }
+          Facebook
+        %a{ :href => "" }
+          %img{ :src => "/email.png", :alt => "Email" }
+          Email
+        %a{ :href => "http://digg.com" }
+          %img{ :src => "/digg.png", :alt => "Digg" }
+          Digg
+        %a{ :href => "http://stumbleupon.com" }
+          %img{ :src => "/stumbleupon.png", :alt => "Email" }
+          StumbleUpon
+    /[if IE]
+      %a{ :href => "javascript:;", :onclick => "$.fancybox.close();", :id => 'close_link'} [X] Close
+        

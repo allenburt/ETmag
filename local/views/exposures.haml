@@ -1,0 +1,83 @@
+%h1.hidden Exposures
+%description.hidden Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+
+#content-wrapper
+  /[if IE]
+    :css
+       #fake-header { position: relative; top: -25px !important; }
+       #content { position: relative; }
+  #fake-header
+  #content
+    - @latest = @pages.pop
+    #header
+      %img{ :src => '/img/exposures_header.png'}
+        #pre-reg-button-top
+          %a#submit_button_top{:href => '#pre-register-form-top'} Pre-Register
+    #top-wrapper
+      #left-col-66
+        #heading
+          .date #{@latest.date.strftime("%B %d, %Y")}
+          %a{ :href => "#{url_for(@latest)}" }
+            .title #{@latest.heading}
+        #main-content
+          #thumb-large
+            %a{ :href => "#{url_for(@latest)}" }
+              %img.thumb{ :src => "/img/#{@latest.permalink}/thumb-large.png"}
+          #thumb-large-description
+            .thumb-large-description-title
+              Description goes here
+            .thumb-large-description-text
+              #{@latest.description}
+      #right-col-33
+        #blog-title
+          %a{ :href => 'http://epicthrills.tumblr.com' }
+            %span.blog-title EPIC BLOG
+        - if @feed
+          - for entry in @feed.entries[0,4]
+            .entry
+              %a{ :href => "#{entry.url}"}
+                %h4.date #{Time.parse(entry.published.to_s).strftime("%B %d, %Y")}
+                %h4 #{entry.title}
+    #thumb-grid
+      %ul#thumb-list.jcarousel-skin-tango
+        - for page in @pages
+          %li
+            %a{ :href => "#{url_for(page)}" }
+              %h4.date #{page.date.strftime("%B %d, %Y")}
+              %img.thumb{ :src => "/img/#{page.permalink}/thumb.png"}
+              %h4.title-small #{page.heading}
+              %div.desc-small A short description
+        - for page in @pages
+          %li
+            %a{ :href => "#{url_for(page)}" }
+              %h4.date #{page.date.strftime("%B %d, %Y")}
+              %img.thumb{ :src => "/img/#{page.permalink}/thumb.png"}
+              %h4.title-small #{page.heading}
+              %div.desc-small A short description
+        - for page in @pages
+          %li
+            %a{ :href => "#{url_for(page)}" }
+              %h4.date #{page.date.strftime("%B %d, %Y")}
+              %img.thumb{ :src => "/img/#{page.permalink}/thumb.png"}
+              %h4.title-small #{page.heading}
+              %div.desc-small A short description
+
+.hidden
+  #pre-register-form-top
+    %span.logo_container
+      %img{:src => "/img/logo_white.png"}
+    %div
+      #pre-register-msg
+        Pre-register for an EpicThrills Membership. We'll email you when we launch our first sales
+      %label Email
+      %input#email2{ :type => 'text',
+            :name => 'email_address',
+            :placeholder => 'Email address',
+            :size => 25 }
+      %input#pre_reg_button-top{:name => "commit", :type => "submit", :value => "Pre-Register"}
+    /[if IE]
+      %a{ :href => "javascript:;", :onclick => "$.fancybox.close();", :id => 'close_link2'} [X] Close
+      
+
+%script{ :type => 'text/javascript', :src => '/js/jquery.jcarousel.min.js' }
+%link{ :href => '/stylesheets/jquery-carousel-tango.css', :media => 'screen, projection', :rel => 'stylesheet', :type => 'text/css' }

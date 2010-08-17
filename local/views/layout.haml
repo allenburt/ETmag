@@ -1,0 +1,115 @@
+!!!
+%html{ :lang => "en", "xml:lang" => "en", :xmlns => 'http://www.w3.org/1999/xhtml' }
+  %head
+    %meta{ "http-equiv" => "content-type", "content" => "text/html; charset=utf-8" }
+    - if @description
+      %meta{ "name" => "description", "content" => @description }
+    - if @keywords
+      %meta{ "name" => "keywords", "content" => @keywords }
+    %title= @title
+    %script{ :type => 'text/javascript', :src => '/js/jquery-1.4.2.min.js' }
+    %script{ :type => 'text/javascript', :src => "/js/jquery.fancybox-1.3.1.js" }
+    %script{ :type => 'text/javascript', :src => "/js/jquery-placeholder.js" }
+    %script{ :type => 'text/javascript', :src => '/js/application.js' }
+    %link{ :href => "#{@stylesheet}", :media => "screen, projection", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href =>  "/stylesheets/print.css", :media => "print", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "/stylesheets/jquery.fancybox-1.3.1.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+    /[if lt IE 8]
+      %link{ :href => "/stylesheets/ie.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css" }
+  %body{ :class => @body_class }
+    #article
+      #article-header
+        #article-header-wrapper
+          %a{ :href => "/exposures" }
+            %img{ :src => "/img/exposures_logo_blue.png", :alt => "exposures - by EPICthrills", :id => "logo-image"}
+          .article-nav-bar
+            %a{ :href => "/"} GO TO EPICThrills.com
+            - if @page && @page.newer
+              %a{ :href => "#{url_for(@page.newer)}" } < NEWER
+            %a{ :href => "/exposures" } HOME
+            - if @page && @page.older
+              %a{ :href => "#{url_for(@page.older)}" } OLDER >
+            #follow-us-top
+              %span.follow-text + FOLLOW US:
+              %a{ :href => "http://twitter.com/epicthrills"}
+                %img{ :src => "/twitter.png", :alt => "Twitter" }
+              %a{ :href => "http://facebook.com" }
+                %img{ :src => "/facebook.png", :alt => "Facebook" }
+              %a{ :href => "/articles.xml" }
+                %img{ :src => "/rss.png", :alt => "RSS" }
+
+      #article-content
+        = yield
+      #article-footer-nav
+        #footer-nav-wrapper
+          .article-nav-bar
+            %a{ :href => "/"} GO TO EPICThrills.com
+            - if @page && @page.newer
+              %a{ :href => "#{url_for(@page.newer)}" } < NEWER
+            %a{ :href => "/exposures" } HOME
+            - if @page && @page.older
+              %a{ :href => "#{url_for(@page.older)}" } OLDER >
+      #pre-register
+        #pre-register-wrapper
+          %img{ :src => "/img/logo.png", :alt => "EPICthrills"}
+          #pre-reg-sub-title Epic Adventure Trips and Activities at Exclusive Prices
+          #pre-reg-text Pre-register as a member of EPICthrills and receive an exclusive invitation to the launch of our beta site.
+          %input#email{ :type => 'text',
+                :name => 'email_address',
+                :placeholder => 'Email address',
+                :size => 25 }
+          %input#pre_reg_button{:name => "commit", :type => "submit", :value => "Pre-Register"}
+          %a#pre_register_link.hidden{:href => "#register_form_container"} Pre-Register
+      #article-footer
+        #article-footer-wrapper
+          #footer-logo
+            %a{ :href => "/"}
+              %img{ :src => "/img/logo_white.png", :alt => "EPICthrills"}
+          #follow-us-bottom
+            %span.follow-text + FOLLOW US:
+            %a{ :href => "http://twitter.com/epicthrills"}
+              %img{ :src => "/twitter.png", :alt => "Twitter" }
+            %a{ :href => "http://facebook.com" }
+              %img{ :src => "/facebook.png", :alt => "Facebook" }
+          #footer-nav
+            %a{ :href=> "/" } HOME
+            %a{ :href=> "/exposures" } EXPOSURES
+            %a{ :href=> "/about" } ABOUT
+            %a{ :href=> "/contact" } CONTACT US
+        #copyright Copyright 2010 EPICThrills.com All Rights Reserved   
+.hidden
+  #register_form_container
+    %span.logo_container
+      %img{:src => "/img/logo_white.png"}
+    %span
+      %p.title.left Thank You!
+      %p.left
+        Congratulations! Now you've "got a guy" ready to hook you up with the sickest adventure |
+        trips around. Be on the lookout for a confirmation email in your Inbox and we'll let you |
+        know when we launch our first sales!
+      %p.left
+        In the mean time, check out our latest adventure articles at
+        %a{ :href => '/exposures' } EXPOSURES Magazine
+
+      %p.title.left Invite Others
+      %p.left
+        Know anyone else that would be interested in exclusive adventures? Share the wealth and |
+        spread the word!
+    #share-via-wrapper-popup
+      #share-via-popup
+        %a{ :href => "http://twitter.com/epicthrills"}
+          %img{ :src => "/twitter.png", :alt => "Twitter" }
+          Twitter
+        %a{ :href => "http://facebook.com" }
+          %img{ :src => "/facebook.png", :alt => "Facebook" }
+          Facebook
+        %a{ :href => "" }
+          %img{ :src => "/email.png", :alt => "Email" }
+          Email
+        %a{ :href => "http://digg.com" }
+          %img{ :src => "/digg.png", :alt => "Digg" }
+          Digg
+        %a{ :href => "http://stumbleupon.com" }
+          %img{ :src => "/stumbleupon.png", :alt => "Email" }
+          StumbleUpon
+      %a{ :href => "javascript:;", :onclick => "$.fancybox.close();", :id => 'close_link'} [X] Close

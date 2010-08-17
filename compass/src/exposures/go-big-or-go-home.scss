@@ -1,0 +1,130 @@
+@import "screen";
+
+@mixin title {
+  background: transparent;
+  margin-left: 45px;
+  z-index: 3;
+}
+
+#article-header {
+  background: url(/img/exposures-header-70.png) repeat-x !important;
+}
+
+#content {
+  @include column($blueprint-grid-columns);
+  margin: auto;
+  float: none;
+  display: block;
+  overflow: hidden;
+  font-size: $font-size-regular;
+  position: relative;
+  
+  #title-container {
+    background: url(/img/go-big-or-go-home/bigstock_Climber_2731380.jpg) no-repeat;
+    height: 600px;
+    width: 900px;
+    display: block;
+    float: none;
+    margin: auto;
+    position: relative;
+
+    #article-title{
+      @include title;
+      padding-top: 200px;
+      font-size: $font-size-xl;
+      font-weight: bold;
+    }
+
+    #article-subtitle {
+      @include title;
+      padding-top: 15px;
+    }
+
+    #fb-like-button {
+      @include title;
+      padding-top: 15px;
+    }
+    
+    #article-highlights {
+      @include title;
+      margin-top: 15px;
+      padding: 15px;
+      width: 250px;
+    }
+
+    .white-box {
+      background: url(/img/white-1p-70.png) !important;
+    }
+  }
+}
+
+.quote {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: $font-size-large;
+  text-align: center;
+}
+
+.blue-box {
+  background: #d0e3fc;
+  -moz-box-shadow: 0px 0px 10px #AAA;
+  -webkit-box-shadow: 0px 0px 10px #AAA;
+  box-shadow: 0px 0px 10px #AAA;
+  .title {
+    background: url(/img/right-arrow-black.png) no-repeat;
+    text-transform: uppercase;
+    font-size: $font-size-large;
+    font-weight: bold;
+    margin: 10px;
+    padding-left: 20px;
+  }
+  
+  ul {
+    padding: 5px;
+    li {
+      margin-left: 25px;
+    }
+  }  
+  p {
+   padding: 10px;
+  }
+}
+
+#essentials {
+  height: 287px;
+}
+
+
+#share-via-wrapper {
+  display: block;
+  float: none;
+  width: 650px;
+  height: 90px;
+  margin: auto;
+  #share-via {
+    width: 630px;
+    height: 50px;
+    margin: 20px auto 20px auto;
+    border: #ECECEC 2px solid;
+    padding: 20px 5px 0px 5px;
+    background-color: #F5F5F5;
+    text-align: center;
+    font-size: 18px;
+    a {
+      height: 30px;
+      display: inline;
+      text-decoration: none;
+      color: #000000;
+    }
+    a:hover, a:visited:hover {
+      color: #1f1f55;
+    }
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+#dummy-ie-div {
+  height: 30px;  
+}

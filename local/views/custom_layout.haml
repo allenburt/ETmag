@@ -1,0 +1,37 @@
+!!!
+%html{ :lang => "en", "xml:lang" => "en", :xmlns => 'http://www.w3.org/1999/xhtml' }
+  %head
+    %meta{ "http-equiv" => "content-type", "content" => "text/html; charset=utf-8" }
+    - if @description
+      %meta{ "name" => "description", "content" => @description }
+    - if @keywords
+      %meta{ "name" => "keywords", "content" => @keywords }
+    %title= @title
+    %script{ :type => "text/javascript", :src => "/js/jquery-1.4.2.min.js" }
+    %script{ :type => "text/javascript", :src => "/js/jquery.fancybox-1.3.1.js" }
+    %script{ :type => "text/javascript", :src => "/js/jquery-placeholder.js" }
+    %script{ :type => "text/javascript", :src => "/js/home.js" }
+    %link{ :href => "/css/master.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+    - if local_stylesheet?
+      %link{ :href => "/stylesheets/jquery.fancybox-1.3.1.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+      %link{ :href => "/css/local.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "/articles.xml", :rel => "alternate", :type => "application/atom+xml" }
+    = haml :analytics, :layout => false
+  %body.home_body
+    = yield
+    #home_footer 
+      %ul
+        %li.footer_li
+          #home_footer_left Copyright 2010 EPICthrills All Rights Reserved
+        %li.footer_li
+          #home_footer_right
+            %ul
+              %li.footer_link
+                %a{:href => '/'} Home
+              %li.footer_link
+                %a{:href => '/exposures'} Exposures
+              %li.footer_link
+                %a{:href => '/about'} About
+              %li.footer_link
+                %a{:href => '/contact'} Contact Us
+

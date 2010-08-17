@@ -1,0 +1,219 @@
+@import "screen";
+
+body {
+  #article {
+
+    #article-header {
+      background: none;
+    }
+    #article-content {
+      background-color: #0c0c0c;
+      z-index: 0;
+      overflow: visible;
+      min-height: 700px;
+
+      #content-wrapper {
+        padding-bottom: 30px;
+        #fake-header {
+          background: url(/img/header-soft-gradient2.png) repeat-x;
+          height: 180px;
+        }
+        #content {
+          @include column($blueprint-grid-columns);
+          margin:auto;
+          margin-top: -85px;
+          float: none;
+          display: block;
+          min-height: 700px;
+          background-color: #ffffff;
+          z-index: 2;
+          text-align: center;
+          overflow: auto;
+          #header {
+            height: 275px;
+          }
+          #top-wrapper {
+            @include column($blueprint-grid-columns);
+            min-height: 510px;
+            display: block;
+            #left-col-66 {
+              @include column($blueprint-grid-columns*0.63);
+              float: left;
+              height: 530px;
+              display: inline;
+            }
+            #right-col-33 {
+              @include column($blueprint-grid-columns*0.33);
+              margin: 70px 10px auto;
+              min-height: 350px;
+              border: 2px solid #ececec;
+              background-color: #f5f5f5;
+              padding: 10px 0px 0px 10px;
+              a {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#thumb-large {
+  @include column($blueprint-grid-columns*0.40);
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+#thumb-large-description {
+  @include column($blueprint-grid-columns*0.23);
+  float: right;
+  text-align: center;
+  oveflow: auto;
+  a {
+    color: #333333;
+  }
+  a:hover, a:visited:hover {
+    color: #ababab;
+  }
+}
+
+.thumb-large-description-title {
+  margin-top: 100px;
+  border-bottom: 1px solid #ececec;
+  font-size: 14px;
+}
+
+.thumb-large-description-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777777;
+}
+
+#heading {
+  margin: 0px 10px 20px 10px;
+  border-bottom: 2px solid #ececec;
+  a {
+    color: #333333;
+    text-decoration: none;
+  }
+  a:hover, a:visited:hover {
+    color: #ababab;
+  }
+  .title {
+    font-size: $font-size-xl;
+    font-weight: bold;
+  }
+}
+
+#thumb-grid {
+  @include column($blueprint-grid-columns);
+  margin-bottom: 25px;
+}
+
+.thumb {
+  -moz-box-shadow: 0px 0px 10px #888;
+  -webkit-box-shadow: 0px 0px 10px #888;
+  box-shadow: 0px 0px 10px #888;
+}
+
+#thumb-grid img:hover, #thumb-large img:hover {
+  opacity: 0.5;
+}
+
+#thumb-list {
+  font-size : 14px;
+  a {
+    color: #333333;
+    text-decoration: none;
+  }
+  a:hover, a:visited:hover {
+    color: #ababab;
+  }
+}
+
+.date {
+  font-size: $font-size-small;
+  font-style: italic;
+  color: #5185b5;
+  margin-bottom: 10px;
+}
+
+.title-small {
+  margin-top: 10px;
+}
+
+#blog-title {
+  font-size: $font-size-large;
+  .blog-title {
+    border-bottom: 1px solid #ECECEC;
+  }
+  a {
+    color: #333333;
+  }
+  a:hover, a:visited:hover {
+    color: #ababab;
+  }
+}
+
+.desc-small {
+  color: #777777;
+  font-size: 13px;
+}
+
+.entry {
+  text-align: left;
+  margin: 15px 5px 15px 5px;
+  font-size: 13px;
+  a {
+    color: #777777;
+  }
+  a:hover, a:visited:hover {
+    color: #ababab;
+  }
+}
+
+#pre-reg-button-top {
+  height: 55px;
+  position: absolute;
+  margin-left: 760px;
+  margin-top: -75px;
+
+  #submit_button_top {
+    height: 40px;
+    width: 143px;
+    margin: auto;
+    display: block;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: -1000px;
+    background: transparent url(/img/pre_register_button.png);
+  }
+}
+
+#pre_reg_button-top {
+  height: 40px;
+  width: 143px;
+  margin: auto;
+  display: block;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -1000px;
+  background: url(/img/pre_register_button.png);
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+#pre-register-form-top {
+  text-align: center;
+  width: 420px;
+  #pre-register-msg {
+  margin: 10px 10px 20px 10px;
+  }
+}
