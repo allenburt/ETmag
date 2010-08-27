@@ -52,8 +52,8 @@
       #pre-register
         #pre-register-wrapper
           %img{ :src => "/img/logo.png", :alt => "EPICthrills"}
-          #pre-reg-sub-title Epic Adventure Trips and Activities at Exclusive Prices
-          #pre-reg-text Pre-register as a member of EPICthrills and receive an exclusive invitation to the launch of our beta site.
+          #pre-reg-sub-title Modern Adventure Trips.  Elite Experiences.  Members-Only.
+          #pre-reg-text Pre-register to receive exclusive prices on adventure trips and activities.
           %input#email{ :type => 'text',
                 :name => 'email_address',
                 :placeholder => 'Email address',
@@ -74,27 +74,29 @@
           #footer-nav
             %a{ :href=> "/" } HOME
             %a{ :href=> "/exposures" } EXPOSURES
+            %a{ :href=> "http://epicthrills.tumblr.com" } BLOG
             %a{ :href=> "/about" } ABOUT
             %a{ :href=> "/contact" } CONTACT US
-        #copyright Copyright 2010 EPICThrills.com All Rights Reserved   
+        #copyright Copyright © 2010 EPICThrills.com All Rights Reserved   
 .hidden
   #register_form_container
     %span.logo_container
       %img{:src => "/img/logo_white.png"}
     %span
-      %p.title.left Thank You!
+      %p.title.left Welcome
       %p.left
-        Congratulations! Now you've "got a guy" ready to hook you up with the sickest adventure |
-        trips around. Be on the lookout for a confirmation email in your Inbox and we'll let you |
+        Ready to get hooked up with the sickest adventure |
+        trips around? Look out for a confirmation email in your inbox and we'll let you |
         know when we launch our first sales!
       %p.left
-        In the mean time, check out our latest adventure articles at
-        %a{ :href => '/exposures' } EXPOSURES Magazine
+        Until then, take a gander at our adventure publication,
+        %a{ :href => '/exposures' } <b>EXPOSURES Magazine</b>.  
+        We scour the globe finding the hottest adventure shiz around.  Trust us.
+        %a{ :href=> '/exposures'} Check It Out.
 
       %p.title.left Invite Others
       %p.left
-        Know anyone else that would be interested in exclusive adventures? Share the wealth and |
-        spread the word!
+        Tackling big mountain backcountry and chasing trade winds is always better with a travel buddy.  Don't be greedy, spread the word!
     #share-via-wrapper-popup
       #share-via-popup
         %a{ :href => "http://twitter.com/epicthrills"}
@@ -106,10 +108,5 @@
         %a{ :href => "" }
           %img{ :src => "/email.png", :alt => "Email" }
           Email
-        %a{ :href => "http://digg.com" }
-          %img{ :src => "/digg.png", :alt => "Digg" }
-          Digg
-        %a{ :href => "http://stumbleupon.com" }
-          %img{ :src => "/stumbleupon.png", :alt => "Email" }
-          StumbleUpon
-      %a{ :href => "javascript:;", :onclick => "$.fancybox.close();", :id => 'close_link'} [X] Close
+/[if IE]
+  %a{ :href => "javascript:;", :onclick => "$.fancybox.close();", :id => 'close_link'} [X] Close

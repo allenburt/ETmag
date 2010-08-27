@@ -1,5 +1,5 @@
 // Variables
-$font-size: 16px
+$font-size: 15px
 $gray: #bdbdbd
 
 @mixin fill_parent
@@ -22,8 +22,11 @@ div#home_frame_container
   z-index: 2
 
 .title
-  font-size: 1.5em
-  margin: 5px
+  font-size: 1.7em
+  font-family: inherit
+  font-weight: normal
+  color: #ffffff
+  margin: 10px
 
 .left
   text-align: left
@@ -55,6 +58,12 @@ div#about_text
   height: 400px
   margin: auto
   overflow: auto
+  
+  a
+    color: #1D81C0
+    text-decoration: none
+  a:hover
+    text-decoration: underline
 
 div#about_dummy
   height: 50px
@@ -107,11 +116,17 @@ div#home_footer
 
 #hidden, .hidden
   display: none
+  
 
 #register_form_container
   color: $gray
   text-align: center
   width: 600px
+  
+  a
+    color: #1D81C0
+  a:hover
+    text-decoration: underline
 
 #form_errors
   height: 2em
@@ -188,11 +203,14 @@ p
       display: inline
       text-decoration: none
       color: #999999
+    a:hover
+      color: #ececec
     img
       vertical-align: middle
 
 #email
-  margin: 15px
+  margin: 5px
+  font-size: 1em
 
 .placeholderBlur
   color: #666

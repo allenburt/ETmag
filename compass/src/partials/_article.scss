@@ -76,7 +76,7 @@ body {
     }
 
     #article-footer-nav {
-      background: #232323;
+      background: #0c0c0c;
       height: 50px;
       font-size: $font-size-small;      
 
@@ -107,8 +107,9 @@ body {
         padding-bottom: 10px;
         
         #pre-reg-sub-title {
-          font-weight: bold;
+          font-weight: normal;
           font-size: $font-size-large;
+          font-family: inherit;
           margin-bottom: 25px;
         }
 
@@ -222,9 +223,23 @@ body {
 #register_form_container {
   color: #bdbdbd;
   width: 600px;
+  font-size: 15px;
+  text-align: center;
+  font-family: "Helvetica Neue",Helvetica,sans-serif;
+  text-weight: normal;
+  line-height: 1.5em;
+  text-decoration: none;
   a {
-    color: #bdbdbd;
+    color: #1D81C0;
     text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .title {
+    color: #ffffff;
+    font-size: 1.7;
+    font-family: inherit;
   }
 }
 
@@ -246,15 +261,17 @@ p {
   float: none;
   margin: auto;
   #share-via-popup {
-    padding: 20px 5px 0px 5px;
+    padding: 20px 5px 10px 5px;
     text-align: center;
     font-size: 18px;
     a {
       height: 30px;
+      color: #BDBDBD;
       display: inline;
       text-decoration: none;
     }
-    a:hover, a:visited:hover {
+    a:hover {
+      color: #ececec;
     }
     img {
       vertical-align: middle;

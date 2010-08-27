@@ -3,26 +3,36 @@
 @mixin title {
   background: transparent;
   margin-left: 45px;
+  margin-right: 150px;
   z-index: 3;
 }
 
 #article-header {
   background: url(/img/exposures-header-70.png) repeat-x !important;
+  opacity: 1;
+}
+
+#content-wrapper {
+  background: #F2F2F2;
 }
 
 #content {
   @include column($blueprint-grid-columns);
   margin: auto;
   float: none;
+  background: #ffffff;
   display: block;
   overflow: hidden;
-  font-size: $font-size-regular;
+  font-size: 17px;
   position: relative;
+  font-family: Georgia, Serif;
+  color: #28282b;
+  line-height: 1.3em;
   
   #title-container {
-    background: url(/img/go-big-or-go-home/bigstock_Climber_2731380.jpg) no-repeat;
-    height: 600px;
-    width: 900px;
+    background: url(/img/go-big-or-go-home/aircombatphoto1.jpg) no-repeat;
+    height: 632px;
+    width: 910px;
     display: block;
     float: none;
     margin: auto;
@@ -30,15 +40,21 @@
 
     #article-title{
       @include title;
-      padding-top: 200px;
-      font-size: $font-size-xl;
-      font-weight: bold;
+      padding-top: 450px;
+      font-size: 85px;
+      font-weight: normal;
+      font-family: Impact, Charcoal, sans-serif;
+      color: #8f0000;
+      opacity: 1; 
     }
 
     #article-subtitle {
       @include title;
-      padding-top: 15px;
-    }
+      padding-top: 30px;
+      color: #afafaf;
+      font-size: 22px;
+      font-family: ‘Arial Narrow’, sans-serif;
+}
 
     #fb-like-button {
       @include title;
@@ -59,17 +75,42 @@
 }
 
 .quote {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  font-size: $font-size-large;
+  border-top: 1px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
+  line-height: 3em;
+  font-size: 24px;
   text-align: center;
+  color: #8f0000;
+  text-weight: bold;
+  font-family: ‘Arial Narrow’, sans-serif;
+}
+
+a {
+  color: #8f0000;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none; 
+}
+
+.intro {
+  font-family: ‘Arial Narrow’, sans-serif;
+  font-size: 20px;
+  color: #4B4C50;
+  
+}
+.credits {
+  font-size: 15px;
 }
 
 .blue-box {
-  background: #d0e3fc;
+  background: #c8cbd5;
   -moz-box-shadow: 0px 0px 10px #AAA;
   -webkit-box-shadow: 0px 0px 10px #AAA;
   box-shadow: 0px 0px 10px #AAA;
+  font-size: 15px;
+  font-family: ‘Arial Narrow’, sans-serif;
   .title {
     background: url(/img/right-arrow-black.png) no-repeat;
     text-transform: uppercase;
@@ -77,6 +118,7 @@
     font-weight: bold;
     margin: 10px;
     padding-left: 20px;
+    color: #8f0000;
   }
   
   ul {
@@ -91,7 +133,7 @@
 }
 
 #essentials {
-  height: 287px;
+  height: 240px;
 }
 
 
