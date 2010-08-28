@@ -598,6 +598,9 @@ p {
   margin: auto;
   float: none;
   background: #ffffff;
+  -moz-box-shadow: 0px 0px 10px #AAA;
+  -webkit-box-shadow: 0px 0px 10px #AAA;
+  box-shadow: 0px 0px 10px #AAA;
   display: block;
   overflow: hidden;
   font-size: 17px;
@@ -610,7 +613,7 @@ p {
 * html #content {
   overflow-x: hidden;
 }
-/* line 32, ../../src/exposures/go-big-or-go-home.scss */
+/* line 35, ../../src/exposures/go-big-or-go-home.scss */
 #content #title-container {
   background: url(/img/go-big-or-go-home/aircombatphoto1.jpg) no-repeat;
   height: 632px;
@@ -620,7 +623,7 @@ p {
   margin: auto;
   position: relative;
 }
-/* line 41, ../../src/exposures/go-big-or-go-home.scss */
+/* line 44, ../../src/exposures/go-big-or-go-home.scss */
 #content #title-container #article-title {
   background: transparent;
   margin-left: 45px;
@@ -633,7 +636,7 @@ p {
   color: #8f0000;
   opacity: 1;
 }
-/* line 51, ../../src/exposures/go-big-or-go-home.scss */
+/* line 54, ../../src/exposures/go-big-or-go-home.scss */
 #content #title-container #article-subtitle {
   background: transparent;
   margin-left: 45px;
@@ -644,7 +647,7 @@ p {
   font-size: 22px;
   font-family: ‘Arial Narrow’, sans-serif;
 }
-/* line 59, ../../src/exposures/go-big-or-go-home.scss */
+/* line 62, ../../src/exposures/go-big-or-go-home.scss */
 #content #title-container #fb-like-button {
   background: transparent;
   margin-left: 45px;
@@ -652,7 +655,7 @@ p {
   z-index: 3;
   padding-top: 15px;
 }
-/* line 64, ../../src/exposures/go-big-or-go-home.scss */
+/* line 67, ../../src/exposures/go-big-or-go-home.scss */
 #content #title-container #article-highlights {
   background: transparent;
   margin-left: 45px;
@@ -662,12 +665,12 @@ p {
   padding: 15px;
   width: 250px;
 }
-/* line 71, ../../src/exposures/go-big-or-go-home.scss */
+/* line 74, ../../src/exposures/go-big-or-go-home.scss */
 #content #title-container .white-box {
   background: url(/img/white-1p-70.png) !important;
 }
 
-/* line 77, ../../src/exposures/go-big-or-go-home.scss */
+/* line 80, ../../src/exposures/go-big-or-go-home.scss */
 .quote {
   border-top: 1px solid #afafaf;
   border-bottom: 1px solid #afafaf;
@@ -679,30 +682,30 @@ p {
   font-family: ‘Arial Narrow’, sans-serif;
 }
 
-/* line 88, ../../src/exposures/go-big-or-go-home.scss */
+/* line 91, ../../src/exposures/go-big-or-go-home.scss */
 a {
   color: #8f0000;
   text-decoration: underline;
 }
 
-/* line 93, ../../src/exposures/go-big-or-go-home.scss */
+/* line 96, ../../src/exposures/go-big-or-go-home.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 97, ../../src/exposures/go-big-or-go-home.scss */
+/* line 100, ../../src/exposures/go-big-or-go-home.scss */
 .intro {
   font-family: ‘Arial Narrow’, sans-serif;
   font-size: 20px;
   color: #4B4C50;
 }
 
-/* line 103, ../../src/exposures/go-big-or-go-home.scss */
+/* line 106, ../../src/exposures/go-big-or-go-home.scss */
 .credits {
   font-size: 15px;
 }
 
-/* line 107, ../../src/exposures/go-big-or-go-home.scss */
+/* line 110, ../../src/exposures/go-big-or-go-home.scss */
 .blue-box {
   background: #c8cbd5;
   -moz-box-shadow: 0px 0px 10px #AAA;
@@ -711,7 +714,7 @@ a:hover {
   font-size: 15px;
   font-family: ‘Arial Narrow’, sans-serif;
 }
-/* line 114, ../../src/exposures/go-big-or-go-home.scss */
+/* line 117, ../../src/exposures/go-big-or-go-home.scss */
 .blue-box .title {
   background: url(/img/right-arrow-black.png) no-repeat;
   text-transform: uppercase;
@@ -721,25 +724,25 @@ a:hover {
   padding-left: 20px;
   color: #8f0000;
 }
-/* line 124, ../../src/exposures/go-big-or-go-home.scss */
+/* line 127, ../../src/exposures/go-big-or-go-home.scss */
 .blue-box ul {
   padding: 5px;
 }
-/* line 126, ../../src/exposures/go-big-or-go-home.scss */
+/* line 129, ../../src/exposures/go-big-or-go-home.scss */
 .blue-box ul li {
   margin-left: 25px;
 }
-/* line 130, ../../src/exposures/go-big-or-go-home.scss */
+/* line 133, ../../src/exposures/go-big-or-go-home.scss */
 .blue-box p {
   padding: 10px;
 }
 
-/* line 135, ../../src/exposures/go-big-or-go-home.scss */
+/* line 138, ../../src/exposures/go-big-or-go-home.scss */
 #essentials {
   height: 240px;
 }
 
-/* line 140, ../../src/exposures/go-big-or-go-home.scss */
+/* line 143, ../../src/exposures/go-big-or-go-home.scss */
 #share-via-wrapper {
   display: block;
   float: none;
@@ -747,7 +750,7 @@ a:hover {
   height: 90px;
   margin: auto;
 }
-/* line 146, ../../src/exposures/go-big-or-go-home.scss */
+/* line 149, ../../src/exposures/go-big-or-go-home.scss */
 #share-via-wrapper #share-via {
   width: 630px;
   height: 50px;
@@ -758,23 +761,23 @@ a:hover {
   text-align: center;
   font-size: 18px;
 }
-/* line 155, ../../src/exposures/go-big-or-go-home.scss */
+/* line 158, ../../src/exposures/go-big-or-go-home.scss */
 #share-via-wrapper #share-via a {
   height: 30px;
   display: inline;
   text-decoration: none;
   color: #000000;
 }
-/* line 161, ../../src/exposures/go-big-or-go-home.scss */
+/* line 164, ../../src/exposures/go-big-or-go-home.scss */
 #share-via-wrapper #share-via a:hover, #share-via-wrapper #share-via a:visited:hover {
   color: #1f1f55;
 }
-/* line 164, ../../src/exposures/go-big-or-go-home.scss */
+/* line 167, ../../src/exposures/go-big-or-go-home.scss */
 #share-via-wrapper #share-via img {
   vertical-align: middle;
 }
 
-/* line 170, ../../src/exposures/go-big-or-go-home.scss */
+/* line 173, ../../src/exposures/go-big-or-go-home.scss */
 #dummy-ie-div {
   height: 30px;
 }
