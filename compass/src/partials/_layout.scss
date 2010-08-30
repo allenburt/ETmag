@@ -9,12 +9,12 @@
   
   .first {
     @include column($two-col-first-column);
-    margin: 19px;
+    margin: 18px;
   }
   
   .second {
     @include column($two-col-second-column,true);
-    margin: 19px;
+    margin: 18px;
   }
 }
 
@@ -24,17 +24,17 @@
   
   .first {
     @include column($three-col-first-column);
-    margin: 19px;
+    margin: 18px;
   }
   
   .second {
     @include column($three-col-second-column);
-    margin: 19px;
+    margin: 18px;
   }
 
   .third {
     @include column($three-col-third-column,true);
-    margin: 19px;
+    margin: 18px;
   }
   .arrow {
     background: url(/img/right-arrow-black.png) no-repeat;

@@ -2,74 +2,116 @@
 
 @mixin title {
   background: transparent;
-  margin-left: 45px;
+  margin-left: 0px;
   z-index: 3;
 }
 
 #article-header {
-  background: url(/img/exposures-header-70.png) repeat-x !important;
+  background:  url(/img/header-soft-gradient2.png) repeat-x !important;
+  height: 80px;
+}
+
+#content-wrapper {
+  background: #f4f4f4;
 }
 
 #content {
   @include column($blueprint-grid-columns);
   margin: auto;
   float: none;
+  border: none;
   display: block;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 75px;
   overflow: hidden;
   font-size: $font-size-regular;
+  font-size: 16px;
   position: relative;
+  font-family: Georgia, Serif;
+  line-height: 1.3em;
+  color: #202020;
   
-  #title-container {
-    background: url(/img/go-big-or-go-home/bigstock_Climber_2731380.jpg) no-repeat;
-    height: 600px;
-    width: 900px;
-    display: block;
-    float: none;
+  #content-body {
+    float: bottom;
+    height: 400px;
+    background: transparent url(/img/postpg.jpg) repeat-y scroll 0 bottom !important;
     margin: auto;
-    position: relative;
+  }
 
-    #article-title{
-      @include title;
-      padding-top: 200px;
-      font-size: $font-size-xl;
-      font-weight: bold;
-    }
+  #content-header {
+    background: url(/img/pagetop.jpg) no-repeat scroll 0 top;
+    width: 950px;
+    position: top;
+    margin-top: 70px;
+  
+    #title-container {
+      height: 325px;
+      width: 900px;
+      display: block;
+      float: none;
+      margin: auto;
+      position: relative;
 
-    #article-subtitle {
-      @include title;
-      padding-top: 15px;
-    }
+      #article-title{
+        @include title;
+        padding-top: -10px;
+        font-size: 85px;
+        color: #000000;
+        font-weight: none;
+      }
 
-    #fb-like-button {
-      @include title;
-      padding-top: 15px;
-    }
+      #article-subtitle {
+        @include title;
+        padding-top: 0px;
+        color: #525252;
+        font-family: ‘Arial Narrow’, sans-serif;
+        font-size: 20px;
+      }
+
+      #fb-like-button {
+        @include title;
+        padding-top: 50px;
+        padding-bottom: -30px;
+      }
     
-    #article-highlights {
-      @include title;
-      margin-top: 15px;
-      padding: 15px;
-      width: 250px;
-    }
+      #article-highlights {
+        @include title;
+        margin-top: 15px;
+        padding: 15px;
+        width: 250px;
+      }
 
-    .white-box {
-      background: url(/img/white-1p-70.png) !important;
+      .white-box {
+        background: url(/img/white-1p-70.png) !important;
+      }
     }
   }
 }
 
+.footer {
+  background: #ffffff url(/img/pagebottom.jpg) no-repeat scroll 0 bottom !important;
+}
 .quote {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  font-size: $font-size-large;
-  text-align: center;
+  border-left: 4px solid #000000;
+  font-size: 17px;
+  margin-right: 10px;
+  vertical-align: center;
 }
 
+.border {
+ border: 1px solid #d5d5d5;
+}
+
+.textborder {
+ border: 1px solid #ffffff;
+ margin-top: 0px;
+}
+
+
 .blue-box {
-  background: #d0e3fc;
-  -moz-box-shadow: 0px 0px 10px #AAA;
-  -webkit-box-shadow: 0px 0px 10px #AAA;
-  box-shadow: 0px 0px 10px #AAA;
+  background: #f4f4f4;
+  border: 1px solid #d5d5d5;
   .title {
     background: url(/img/right-arrow-black.png) no-repeat;
     text-transform: uppercase;
@@ -91,7 +133,7 @@
 }
 
 #essentials {
-  height: 287px;
+  height: 200px;
 }
 
 
@@ -105,9 +147,9 @@
     width: 630px;
     height: 50px;
     margin: 20px auto 20px auto;
-    border: #ECECEC 2px solid;
+    border: #d5d5d5 1px solid;
     padding: 20px 5px 0px 5px;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     text-align: center;
     font-size: 18px;
     a {

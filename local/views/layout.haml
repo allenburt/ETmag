@@ -25,10 +25,10 @@
           .article-nav-bar
             %a{ :href => "/"} GO TO EPICThrills.com
             - if @page && @page.newer
-              %a{ :href => "#{url_for(@page.newer)}" } < NEWER
+              %a{ :href => "#{url_for(@page.newer)}" } << PREVIOUS
             %a{ :href => "/exposures" } HOME
             - if @page && @page.older
-              %a{ :href => "#{url_for(@page.older)}" } OLDER >
+              %a{ :href => "#{url_for(@page.older)}" } NEXT >>
             #follow-us-top
               %span.follow-text + FOLLOW US:
               %a{ :href => "http://twitter.com/epicthrills"}
