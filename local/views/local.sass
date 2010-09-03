@@ -10,6 +10,7 @@ $gray: #bdbdbd
   height: 100%
   overflow: hidden
   font-size: $font-size
+  background: #000000
 
 div#dummy
   @include fill_parent
@@ -177,6 +178,8 @@ div#home_footer_left
 div#home_footer_right
   @extend div#home_footer_left
   float: right
+  a:hover
+    text-decoration: underline
 
 .footer_li
   display: inline

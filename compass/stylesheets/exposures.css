@@ -121,7 +121,7 @@ body #article {
 /* line 27, ../src/partials/_article.scss */
 body #article #article-header {
   width: 100%;
-  height: 72px;
+  height: 72;
   background: url(/img/exposures-header-70.png) repeat-x;
   position: absolute;
   z-index: 1;

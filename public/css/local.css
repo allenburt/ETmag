@@ -1,7 +1,8 @@
 .home_body {
   height: 100%;
   overflow: hidden;
-  font-size: 15px; }
+  font-size: 15px;
+  background: black; }
 
 div#dummy {
   height: 100%;
@@ -157,6 +158,8 @@ div#home_footer_left, div#home_footer_right {
 
 div#home_footer_right {
   float: right; }
+  div#home_footer_right a:hover {
+    text-decoration: underline; }
 
 .footer_li {
   display: inline; }

@@ -578,18 +578,18 @@ p {
   padding-left: 19px;
 }
 
-/* line 10, ../../src/exposures/go-big-or-go-home.scss */
+/* line 9, ../../src/exposures/mototaxi-junket.scss */
 #article-header {
-  background: url(/img/exposures-header-70.png) repeat-x !important;
-  opacity: 1;
+  background: #2E2E2E !important;
+  height: 80px;
 }
 
-/* line 15, ../../src/exposures/go-big-or-go-home.scss */
+/* line 14, ../../src/exposures/mototaxi-junket.scss */
 #content-wrapper {
-  background: #F2F2F2;
+  background: #000000;
 }
 
-/* line 19, ../../src/exposures/go-big-or-go-home.scss */
+/* line 18, ../../src/exposures/mototaxi-junket.scss */
 #content {
   display: inline;
   float: left;
@@ -597,124 +597,138 @@ p {
   width: 950px;
   margin: auto;
   float: none;
+  border: none;
   background: #ffffff;
-  -moz-box-shadow: 0px 0px 10px #AAA;
-  -webkit-box-shadow: 0px 0px 10px #AAA;
-  box-shadow: 0px 0px 10px #AAA;
   display: block;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 75px;
   overflow: hidden;
-  font-size: 17px;
+  font-size: 18px;
+  font-size: 16px;
   position: relative;
   font-family: Georgia, Serif;
-  color: #28282b;
   line-height: 1.3em;
+  color: #00000;
 }
 /* line 138, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.4/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html #content {
   overflow-x: hidden;
 }
-/* line 35, ../../src/exposures/go-big-or-go-home.scss */
-#content #title-container {
-  background: url(/img/go-big-or-go-home/aircombatphoto1.jpg) no-repeat;
-  height: 632px;
-  width: 910px;
+/* line 36, ../../src/exposures/mototaxi-junket.scss */
+#content #content-body {
+  float: bottom;
+  height: 400px;
+  background: transparent url(/img/postpg.jpg) repeat-y scroll 0 bottom !important;
+  margin: auto;
+  border-bottom: 1px #eaeaea;
+}
+/* line 44, ../../src/exposures/mototaxi-junket.scss */
+#content #content-header {
+  background: #0c0c0c url(/img/mototaxi-junket/mototaxibg1.png) no-repeat scroll 0 top;
+  width: 950px;
+  height: 736px;
+  position: top;
+}
+/* line 49, ../../src/exposures/mototaxi-junket.scss */
+#content #content-header #title-container {
+  width: 950px;
+  height: 736px;
   display: block;
   float: none;
-  margin: auto;
   position: relative;
 }
-/* line 44, ../../src/exposures/go-big-or-go-home.scss */
-#content #title-container #article-title {
+/* line 56, ../../src/exposures/mototaxi-junket.scss */
+#content #content-header #title-container #article-title {
   background: transparent;
-  margin-left: 45px;
-  margin-right: 150px;
+  margin-left: 0px;
   z-index: 3;
-  padding-top: 450px;
-  font-size: 85px;
-  font-weight: normal;
-  font-family: Impact, Charcoal, sans-serif;
-  color: #8f0000;
-  opacity: 1;
+  padding-top: 0px;
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: none;
+  font-family: Times,Times,serif;
 }
-/* line 54, ../../src/exposures/go-big-or-go-home.scss */
-#content #title-container #article-subtitle {
+/* line 65, ../../src/exposures/mototaxi-junket.scss */
+#content #content-header #title-container #article-subtitle {
   background: transparent;
-  margin-left: 45px;
-  margin-right: 150px;
+  margin-left: 0px;
   z-index: 3;
-  padding-top: 30px;
-  color: #afafaf;
-  font-size: 22px;
+  padding-top: 0px;
+  color: #525252;
   font-family: ‘Arial Narrow’, sans-serif;
+  font-size: 20px;
 }
-/* line 62, ../../src/exposures/go-big-or-go-home.scss */
-#content #title-container #fb-like-button {
+/* line 73, ../../src/exposures/mototaxi-junket.scss */
+#content #content-header #title-container #fb-like-button {
   background: transparent;
-  margin-left: 45px;
-  margin-right: 150px;
+  margin-left: 0px;
   z-index: 3;
-  padding-top: 15px;
+  padding-top: 125px;
+  padding-bottom: 0px;
+  padding-left: 5px;
 }
-/* line 67, ../../src/exposures/go-big-or-go-home.scss */
-#content #title-container #article-highlights {
+/* line 80, ../../src/exposures/mototaxi-junket.scss */
+#content #content-header #title-container #article-highlights {
   background: transparent;
-  margin-left: 45px;
-  margin-right: 150px;
+  margin-left: 0px;
   z-index: 3;
-  margin-top: 15px;
-  padding: 15px;
-  width: 250px;
+  margin: 15px;
+  padding: 10px 0px 10px 0px;
+  width: 350px;
+  position: absolute;
+  text-align: justify;
+  bottom: 175px;
+  right: 0px;
+  color: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
-/* line 74, ../../src/exposures/go-big-or-go-home.scss */
-#content #title-container .white-box {
+/* line 94, ../../src/exposures/mototaxi-junket.scss */
+#content #content-header #title-container .white-box {
   background: url(/img/white-1p-70.png) !important;
 }
 
-/* line 80, ../../src/exposures/go-big-or-go-home.scss */
+/* line 101, ../../src/exposures/mototaxi-junket.scss */
+.footer {
+  background: white url(/img/pagebottom.jpg) no-repeat scroll 0 bottom !important;
+}
+
+/* line 104, ../../src/exposures/mototaxi-junket.scss */
 .quote {
-  border-top: 1px solid #c8cbd5;
-  border-bottom: 1px solid #c8cbd5;
-  line-height: 3em;
-  font-size: 24px;
-  text-align: center;
-  color: #8f0000;
-  text-weight: bold;
-  font-family: ‘Arial Narrow’, sans-serif;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  margin-right: 10px;
+  vertical-align: center;
 }
 
-/* line 91, ../../src/exposures/go-big-or-go-home.scss */
-a {
-  color: #8f0000;
-  text-decoration: underline;
+/* line 111, ../../src/exposures/mototaxi-junket.scss */
+.border {
+  border: 1px solid #d5d5d5;
 }
 
-/* line 96, ../../src/exposures/go-big-or-go-home.scss */
-a:hover {
-  text-decoration: none;
+/* line 115, ../../src/exposures/mototaxi-junket.scss */
+.textborder {
+  border: 1px solid #ffffff;
+  margin-top: 0px;
 }
 
-/* line 100, ../../src/exposures/go-big-or-go-home.scss */
-.intro {
-  font-family: ‘Arial Narrow’, sans-serif;
-  font-size: 20px;
-  color: #4B4C50;
+/* line 120, ../../src/exposures/mototaxi-junket.scss */
+.columnbackground {
+  background: #0c0c0c;
 }
 
-/* line 106, ../../src/exposures/go-big-or-go-home.scss */
-.credits {
-  font-size: 15px;
+/* line 124, ../../src/exposures/mototaxi-junket.scss */
+.whitetext {
+  color: #fffff;
 }
 
-/* line 110, ../../src/exposures/go-big-or-go-home.scss */
+/* line 128, ../../src/exposures/mototaxi-junket.scss */
 .blue-box {
-  background: #c8cbd5;
-  -moz-box-shadow: 0px 0px 10px #AAA;
-  -webkit-box-shadow: 0px 0px 10px #AAA;
-  box-shadow: 0px 0px 10px #AAA;
-  font-size: 15px;
-  font-family: ‘Arial Narrow’, sans-serif;
+  background: #f4f4f4;
+  border: 1px solid #d5d5d5;
 }
-/* line 117, ../../src/exposures/go-big-or-go-home.scss */
+/* line 131, ../../src/exposures/mototaxi-junket.scss */
 .blue-box .title {
   background: url(/img/right-arrow-black.png) no-repeat;
   text-transform: uppercase;
@@ -722,27 +736,26 @@ a:hover {
   font-weight: bold;
   margin: 10px;
   padding-left: 20px;
-  color: #8f0000;
 }
-/* line 127, ../../src/exposures/go-big-or-go-home.scss */
+/* line 140, ../../src/exposures/mototaxi-junket.scss */
 .blue-box ul {
   padding: 5px;
 }
-/* line 129, ../../src/exposures/go-big-or-go-home.scss */
+/* line 142, ../../src/exposures/mototaxi-junket.scss */
 .blue-box ul li {
   margin-left: 25px;
 }
-/* line 133, ../../src/exposures/go-big-or-go-home.scss */
+/* line 146, ../../src/exposures/mototaxi-junket.scss */
 .blue-box p {
   padding: 10px;
 }
 
-/* line 138, ../../src/exposures/go-big-or-go-home.scss */
+/* line 151, ../../src/exposures/mototaxi-junket.scss */
 #essentials {
-  height: 240px;
+  height: 200px;
 }
 
-/* line 143, ../../src/exposures/go-big-or-go-home.scss */
+/* line 156, ../../src/exposures/mototaxi-junket.scss */
 #share-via-wrapper {
   display: block;
   float: none;
@@ -750,34 +763,34 @@ a:hover {
   height: 90px;
   margin: auto;
 }
-/* line 149, ../../src/exposures/go-big-or-go-home.scss */
+/* line 162, ../../src/exposures/mototaxi-junket.scss */
 #share-via-wrapper #share-via {
   width: 630px;
   height: 50px;
   margin: 20px auto 20px auto;
-  border: #ECECEC 2px solid;
+  border: #d5d5d5 1px solid;
   padding: 20px 5px 0px 5px;
-  background-color: #F5F5F5;
+  background-color: #ffffff;
   text-align: center;
   font-size: 18px;
 }
-/* line 158, ../../src/exposures/go-big-or-go-home.scss */
+/* line 171, ../../src/exposures/mototaxi-junket.scss */
 #share-via-wrapper #share-via a {
   height: 30px;
   display: inline;
   text-decoration: none;
   color: #000000;
 }
-/* line 164, ../../src/exposures/go-big-or-go-home.scss */
+/* line 177, ../../src/exposures/mototaxi-junket.scss */
 #share-via-wrapper #share-via a:hover, #share-via-wrapper #share-via a:visited:hover {
   color: #1f1f55;
 }
-/* line 167, ../../src/exposures/go-big-or-go-home.scss */
+/* line 180, ../../src/exposures/mototaxi-junket.scss */
 #share-via-wrapper #share-via img {
   vertical-align: middle;
 }
 
-/* line 173, ../../src/exposures/go-big-or-go-home.scss */
+/* line 186, ../../src/exposures/mototaxi-junket.scss */
 #dummy-ie-div {
   height: 30px;
 }
