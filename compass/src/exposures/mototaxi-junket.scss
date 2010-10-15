@@ -7,8 +7,9 @@
 }
 
 #article-header {
-  background:  #2E2E2E !important;
+  background:  url(/img/header-soft-gradient2.png) repeat-x !important;
   height: 80px;
+  border-bottom: 1px solid #2e2e2e
 }
 
 #content-wrapper {
@@ -31,7 +32,9 @@
   position: relative;
   font-family: Georgia, Serif;
   line-height: 1.3em;
-  color: #00000;
+  color: #303030;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   
   #content-body {
     float: bottom;
@@ -42,7 +45,7 @@
   }
 
   #content-header {
-    background: #0c0c0c url(/img/mototaxi-junket/mototaxibg1.png) no-repeat scroll 0 top;
+    background:  url(/img/mototaxi-junket/mototaxibg1.png) no-repeat scroll 0 top;
     width: 950px;
     height: 736px;
     position: top;
@@ -75,6 +78,7 @@
         padding-top: 125px;
         padding-bottom: 0px;
         padding-left: 5px;
+        color: #ececec;
       }
     
       #article-highlights {
@@ -108,6 +112,14 @@
   vertical-align: center;
 }
 
+.image {
+  border: 2px solid white;
+}
+
+.justify {
+  text-align: justify;
+}
+
 .border {
   border: 1px solid #d5d5d5;
 }
@@ -126,8 +138,10 @@
 }
 
 .blue-box {
-  background: #f4f4f4;
-  border: 1px solid #d5d5d5;
+  background: #eeeeee;
+  border: 1px solid #eeeeee;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
   .title {
     background: url(/img/right-arrow-black.png) no-repeat;
     text-transform: uppercase;
@@ -166,6 +180,8 @@
     border: #d5d5d5 1px solid;
     padding: 20px 5px 0px 5px;
     background-color: #ffffff;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     text-align: center;
     font-size: 18px;
     a {
