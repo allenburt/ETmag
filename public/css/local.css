@@ -20,13 +20,30 @@ div#home_frame_container {
   font-family: inherit;
   font-weight: normal;
   color: white;
-  margin: 10px; }
+  margin: 7px 10px 0px 10px; }
+
+.subtitle {
+  font-size: 1.2em;
+  font-family: serif;
+  font-weight: normal;
+  color: #bdbdbd;
+  margin: 20px 2px 15px 2px; }
+
+.subtitle2 {
+  font-size: 0.9em;
+  font-family: serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #bdbdbd;
+  margin: 5px 5px 0px 5px; }
 
 .left {
   text-align: left; }
 
 .spam {
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px; }
 
 div#about_frame_container {
   position: absolute;
