@@ -26,7 +26,7 @@ div#home_frame_container {
   font-size: 1.2em;
   font-family: serif;
   font-weight: normal;
-  color: #bdbdbd;
+  color: #8b8b8b;
   margin: 20px 2px 15px 2px; }
 
 .subtitle2 {
@@ -64,7 +64,7 @@ div#about_frame {
   margin: auto;
   margin-top: -30px;
   text-align: center;
-  color: #bdbdbd;
+  color: #8b8b8b;
   background: url(/img/about_frame_bg.png); }
 
 div#about_text {
@@ -101,7 +101,7 @@ div#home_frame {
   height: 366px;
   margin: auto;
   text-align: center;
-  color: #bdbdbd;
+  color: #8b8b8b;
   background: url(/img/home_frame_bg.png); }
 
 div#home_frame_text {
@@ -114,14 +114,14 @@ div#home_footer {
   height: 44px;
   bottom: 0px;
   position: absolute;
-  color: #bdbdbd;
+  color: #8b8b8b;
   z-index: 1; }
 
 #hidden, .hidden {
   display: none; }
 
 #register_form_container {
-  color: #bdbdbd;
+  color: #8b8b8b;
   text-align: center;
   width: 600px; }
   #register_form_container a {
@@ -165,9 +165,13 @@ div#home_footer {
   background-repeat: no-repeat;
   overflow: hidden;
   text-indent: -1000px;
-  background: url(/img/pre_register_button.png);
+  background: url(/img/pre_register_button2.png) no-repeat;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 154px;
+  height: 57px;
+  margin-bottom: 0px;
+  text-align: center; }
 
 div#home_footer_left, div#home_footer_right {
   padding: 10px 5px 0px 10px;
@@ -188,7 +192,7 @@ div#home_footer_right {
 
 .footer_link a:link, a:visited {
   text-decoration: none;
-  color: #bdbdbd; }
+  color: #8b8b8b; }
 
 p {
   margin: 0 0 1em; }
