@@ -4,13 +4,18 @@ gem "builder", "2.1.2"
 gem "haml", "3.0.12"
 gem "maruku", "0.6.0"
 gem "RedCloth", "4.2.2"
-gem "sinatra", "1.0"
+gem "sinatra"
 gem "hassle"
 gem "activesupport", "2.3.5"
 gem "feedzirra"
 
 #Require hominid for mailchimp integration
-gem "hominid"
+gem "hominid", "~> 3.0.2"
+
+# MongoDB
+gem "mongo"
+gem "bson_ext"
+gem "pony"
 
 group :development do
   gem "shotgun"

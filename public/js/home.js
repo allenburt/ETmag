@@ -27,30 +27,42 @@ var getDimensions = function() {
 var validateAndSubmitForm = function() {
   var valid = false;
   var email = $("#email").val();
+  var ref = '';
+
   if(email != "" && email.match(/^.+@.+\..+$/)) {
+    var ajaxData = { email: email};
+    if($("#referrer").length) {
+      ajaxData['r'] = $("#referrer").val();
+    }
     $.ajax( { url: "/submit_form",
               dataType: "text",
               method: "POST",
-              data: { email : email},
+              data: ajaxData,
               beforeSend: function() {
                 /*$("#pre_register_link").empty()
                                 .append(SubmittingStr);*/
               },
               error: function() {
-                /*$("#pre_register_link").empty()
-                  .append("We're sorry an error occurred. Please try again later.");*/
+                $(".error").removeClass('hidden').html("An error occurred. Please try again later.").fadeIn();
                 valid = false;
               },
               success: function(d) {
-                if(d == "true") {
+                $(".error").html('');
+                if(d != "false" && d != "exists") {
+                  var href = 'http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.epicthrills.com%3Fr%3D'+d;
+                  href += '&t=Modern Adventure.  Elite Experiences. Members-Only.';
+                  $("#fb-link").attr('href', href);
+                  var text = $(".twitter-share-button").attr('src');
+                  text = text.replace('http%3A%2F%2Fwww.epicthrills.com', 'http%3A%2F%2Fwww.epicthrills.com%3Fr%3D'+d);
+                  $(".twitter-share-button").attr('src', text)
+                  $("#direct-link").val('http://www.epicthrills.com?r='+d);
                   $("#pre_register_link").trigger('click');
-                 /* $("#pre_register_link").empty()
-                                  .append("Submitted. Thanks!"); */
                   $("#email").val("");
                   valid = true;
+                } else if (d == 'exists') {
+                  $(".error").removeClass('hidden').html("Looks like you've already signed up!").fadeIn();
                 } else {
-                  /*$("#pre_register_link").empty()
-                                  .append("We're sorry an error occurred. Please try again later.");*/
+                  $(".error").removeClass('hidden').html("An error occurred. Please try again later.").fadeIn();
                 }
               }
             });

@@ -124,10 +124,6 @@ div#home_footer {
   color: #8b8b8b;
   text-align: center;
   width: 600px; }
-  #register_form_container a {
-    color: #1d81c0; }
-  #register_form_container a:hover {
-    text-decoration: underline; }
 
 #form_errors {
   height: 2em; }
@@ -205,13 +201,6 @@ p {
     padding: 20px 5px 0px 5px;
     text-align: center;
     font-size: 18px; }
-    #share-via-wrapper-popup #share-via-popup a {
-      height: 30px;
-      display: inline;
-      text-decoration: none;
-      color: #999999; }
-    #share-via-wrapper-popup #share-via-popup a:hover {
-      color: #ececec; }
     #share-via-wrapper-popup #share-via-popup img {
       vertical-align: middle; }
 
@@ -229,3 +218,12 @@ p {
   position: absolute;
   right: 5px;
   top: 5px; }
+
+#direct-link {
+  padding: 5px;
+}
+
+.error {
+  color: #f00;
+  text-align: center;
+}

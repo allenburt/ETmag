@@ -18,36 +18,40 @@
                 :placeholder => 'Email address',
                 :size => 25 }
         %input#pre_reg_button{:name => "commit", :type => "submit", :value => "Pre-Register"}
+        .error.hidden
         %a#pre_register_link.hidden{:href => "#register_form_container"} Pre-Register
         %p.spam (No Spam, Promise!)
 
 #hidden
+  - unless params[:r].blank?
+    %input#referrer{:type => 'hidden', :value => params[:r]}
   #register_form_container
     %span.logo_container
       %img{:src => "/img/logo_white.png"}
     %span
-      %p.title.left Welcome
-      %p.left
-        Congrats! You just snagged one of our pre-launch membership spots!  Stay tuned and we'll let you |
-        know when we launch our first sales!
-      %p.left
-        Until then, take a gander at our
-        %a{ :href => 'http://epicthrills.tumblr.com' } <b>EPIC Blog</b>.  
-        We scour the globe finding the hottest adventures around.  Trust us.
-        %a{ :href=> 'http://epicthrills.tumblr.com'} Check It Out.
+      %p.title Thanks! Want to get an early invitation?
+      %br
+      %p
+        Invite atleast 3 friends using the link below. The more friends you invite, the sooner you'll get access!
+      %p
+        To share with your friends, click "Share" and "Tweet":
+      %p
 
-      %p.title.left Invite Others
-      %p.left
-        Chasing trade winds or tackling big mountain backcountry is always better with a travel buddy.  Don't be greedy, spread the word!
-    #share-via-wrapper-popup
-      #share-via-popup
-        %a{ :href => "http://twitter.com/home/?status=Just registered for @EpicThrills - the hottest adventure trips and activities at members-only prices http://www.epicthrills.com", :oneclick => "javascript:pageTracker._trackPageview('/outgoing/twitter.com/home/?status=Just registered for @EpicThrills - the hottest adventure trips and activities at members-only prices http://www.epicthrills.com');", :target => "_blank" }
-          %img{ :src => "/twitter.png", :alt => "Twitter" }
-          Twitter        
-        
-        %a{ :href => "http://www.facebook.com/sharer.php?u=http://www.epicthrills.com&t=Modern Adventure.  Elite Experiences. Members-Only.", :target => "_blank"}
-          %img{ :src => "/facebook.png", :alt => "Facebook" }
-          Facebook
+        %a#fb-link{ :name => 'fb_share', :type => 'button', :href => "http://www.facebook.com/sharer.php?u=http://www.epicthrills.com&t=Modern Adventure.  Elite Experiences. Members-Only."}
+
+      %p
+        %a#twitter-link.twitter-share-button{ 'data-text' => "Just registered for @EpicThrills - the hottest adventure trips and activities at members-only prices http://www.epicthrills.com", :onclick => "javascript:pageTracker._trackPageview('/outgoing/twitter.com/home/?status=Just registered for @EpicThrills - the hottest adventure trips and activities at members-only prices http://www.epicthrills.com');", :target => "_blank", 'data-count' => 'none' }
+
+
+      %p
+        Or copy and paste the following link to share wherever you want!
+
+      %p
+        %input#direct-link{:type => 'text', :size => '35', :name => 'direct_link'}
     /[if IE]
-      %a{ :href => "javascript:;", :onclick => "$.fancybox.close();", :id => 'close_link'} [X] Close
-        
+      %p
+        %a{ :href => "javascript:;", :onclick => "$.fancybox.close();", :id => 'close_link'} [X] Close
+
+
+%script{:type => "text/javascript", :src => "http://platform.twitter.com/widgets.js" }
+%script{:type => "text/javascript", :src => "http://static.ak.fbcdn.net/connect.php/js/FB.Share"}
