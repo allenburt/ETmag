@@ -49,6 +49,11 @@ var validateAndSubmitForm = function() {
               success: function(d) {
                 $(".error").html('');
                 if(d != "false" && d != "exists") {
+                  if(d.indexOf(':') !== -1) {
+                    d = d.split(':').pop()
+                    $("#register_form_container .title").html('Welcome back!')
+                    $("#register_form_container .text").html("The more friends you invite, the sooner you'll get access!")
+                  }
                   var href = 'http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.epicthrills.com%3Fr%3D'+d;
                   href += '&t=Modern Adventure.  Elite Experiences. Members-Only.';
                   $("#fb-link").attr('href', href);

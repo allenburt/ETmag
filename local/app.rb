@@ -110,7 +110,7 @@ get "/submit_form" do
       response = 'exists'
     end
   else
-    response = 'exists'
+    response = "exists:#{contact['ref_id']}"
   end
   response
 end
