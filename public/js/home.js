@@ -51,16 +51,9 @@ var validateAndSubmitForm = function() {
                 if(d != "false" && d != "exists") {
                   if(d.indexOf(':') !== -1) {
                     d = d.split(':').pop()
-                    $("#register_form_container .title").html('Welcome back!')
-                    $("#register_form_container .text").html("The more friends you invite, the sooner you'll get access!")
+                    setWelcomeBackText()
                   }
-                  var href = 'http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.epicthrills.com%3Fr%3D'+d;
-                  href += '&t=Modern Adventure.  Elite Experiences. Members-Only.';
-                  $("#fb-link").attr('href', href);
-                  var text = $(".twitter-share-button").attr('src');
-                  text = text.replace('http%3A%2F%2Fwww.epicthrills.com', 'http%3A%2F%2Fwww.epicthrills.com%3Fr%3D'+d);
-                  $(".twitter-share-button").attr('src', text)
-                  $("#direct-link").val('http://www.epicthrills.com?r='+d);
+                  updateLinks(d);
                   $("#pre_register_link").trigger('click');
                   $("#email").val("");
                   valid = true;
@@ -77,6 +70,21 @@ var validateAndSubmitForm = function() {
     }
   
 };
+
+var updateLinks = function(id) {
+  var href = 'http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.epicthrills.com%3Fr%3D'+id;
+  href += '&t=EpicThrills.com is launching soon and I just snagged early exclusive access to extreme adventure trips';
+  $("#fb-link").attr('href', href);
+  var text = $(".twitter-share-button").attr('src');
+  text = text.replace('http%3A%2F%2Fwww.epicthrills.com', 'http%3A%2F%2Fwww.epicthrills.com%3Fr%3D'+id);
+  $(".twitter-share-button").attr('src', text)
+  $("#direct-link").val('http://www.epicthrills.com?r='+id);
+}
+
+var setWelcomeBackText = function() {
+  $("#register_form_container .title").html('Welcome back!')
+  $("#register_form_container .text").html("The more friends you invite, the sooner you'll get access!")
+}
 
 //Function called on load.
 $(function() {
@@ -121,6 +129,13 @@ $(function() {
       $("#pre_register_link").trigger('click');
     }
   });
+
+  if($("#ref_id").length) {
+    var id = $("#ref_id").val()
+    setWelcomeBackText()
+    updateLinks(id)
+    $("#pre_register_link").trigger('click');
+  }
 
 });
 

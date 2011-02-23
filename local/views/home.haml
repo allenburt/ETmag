@@ -23,6 +23,8 @@
         %p.spam (No Spam, Promise!)
 
 #hidden
+  - if request.cookies['ref_id']
+    %input#ref_id{:type => 'hidden', :value => request.cookies['ref_id']}
   - unless params[:r].blank?
     %input#referrer{:type => 'hidden', :value => params[:r]}
   #register_form_container
@@ -37,10 +39,10 @@
         To share with your friends, click "Share" and "Tweet":
       %p
 
-        %a#fb-link{ :name => 'fb_share', :type => 'button', :href => "http://www.facebook.com/sharer.php?u=http://www.epicthrills.com&t=Modern Adventure.  Elite Experiences. Members-Only."}
+        %a#fb-link{ :name => 'fb_share', :type => 'button', :href => "http://www.facebook.com/sharer.php?u=http://www.epicthrills.com&t=EpicThrills.com is launching soon and I just snagged early exclusive access to extreme adventure trips"}
 
       %p
-        %a#twitter-link.twitter-share-button{ 'data-text' => "Just registered for @EpicThrills - the hottest adventure trips and activities at members-only prices http://www.epicthrills.com", :onclick => "javascript:pageTracker._trackPageview('/outgoing/twitter.com/home/?status=Just registered for @EpicThrills - the hottest adventure trips and activities at members-only prices http://www.epicthrills.com');", :target => "_blank", 'data-count' => 'none' }
+        %a#twitter-link.twitter-share-button{ 'data-text' => ".@epicthrills is launching soon and I just snagged early exclusive access to extreme adventure trips http://www.epicthrills.com", :onclick => "javascript:pageTracker._trackPageview('/outgoing/twitter.com/home/?status=Just registered for @EpicThrills - the hottest adventure trips and activities at members-only prices http://www.epicthrills.com');", :target => "_blank", 'data-count' => 'none' }
 
 
       %p

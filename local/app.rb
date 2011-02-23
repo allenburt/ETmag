@@ -96,21 +96,23 @@ get "/submit_form" do
   end
   contact = @db['contacts'].find_one :email => params[:email]
   id = ""
-  response = 'false'
+  res = 'false'
   if contact.nil?
     id = Digest::MD5.hexdigest(params[:email]+"_epicthrills")[0,6]
     @db['contacts'].save :email => params[:email],
                          :ref_id => id,
                          :ref_by => params[:r],
                          :ref_count => 0
-    response = id
+    res = id
+    response.set_cookie "ref_id", id
     begin
       @mailchimp.list_subscribe(@listid, params[:email])
     rescue
-      response = 'exists'
+      res = 'exists'
     end
   else
-    response = "exists:#{contact['ref_id']}"
+    response.set_cookie "ref_id", contact['ref_id']
+    res = "exists:#{contact['ref_id']}"
   end
-  response
+  res
 end
