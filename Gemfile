@@ -8,6 +8,7 @@ gem "sinatra"
 gem "hassle"
 gem "activesupport", "2.3.5"
 gem "feedzirra"
+gem "hoe", "2.8.0"
 
 #Require hominid for mailchimp integration
 gem "hominid", "~> 3.0.2"
@@ -28,3 +29,4 @@ group :test do
   gem "rspec_hpricot_matchers", "1.0"
   gem "test-unit", "1.2.3"
 end
+

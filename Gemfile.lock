@@ -18,7 +18,7 @@ GEM
     hassle (0.0.1)
       haml
       rack
-    hoe (2.9.0)
+    hoe (2.8.0)
       rake (>= 0.8.7)
     hominid (3.0.2)
     hpricot (0.8.2)
@@ -66,6 +66,7 @@ DEPENDENCIES
   feedzirra
   haml (= 3.0.12)
   hassle
+  hoe (= 2.8.0)
   hominid (~> 3.0.2)
   hpricot (= 0.8.2)
   maruku (= 0.6.0)
