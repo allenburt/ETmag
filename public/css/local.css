@@ -123,6 +123,8 @@ div#home_footer {
 #register_form_container {
   color: #8b8b8b;
   text-align: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
   width: 600px; }
 
 #form_errors {
