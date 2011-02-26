@@ -90,7 +90,7 @@ var setWelcomeBackText = function() {
 
 var setNewText = function() {
   $("#register_form_container .title").html("Thanks! Want to get an early invitation?")
-  $("#register_form_container .text").html("Invite atleast 3 friends using the link below. The more friends you invite, the sooner you'll get access!")
+  $("#register_form_container .text").html("Invite at least 3 friends using the link below. The more friends you invite, the sooner you'll get access!")
 }
 
 //Function called on load.
