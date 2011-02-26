@@ -142,6 +142,7 @@ $(function() {
     setWelcomeBackText()
     updateLinks(id)
     $("#pre_register_link").trigger('click');
+    $.fancybox.resize()
   }
 
 });
