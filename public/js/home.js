@@ -52,6 +52,8 @@ var validateAndSubmitForm = function() {
                   if(d.indexOf(':') !== -1) {
                     d = d.split(':').pop()
                     setWelcomeBackText()
+                  } else {
+                    setNewText()
                   }
                   updateLinks(d);
                   $("#pre_register_link").trigger('click');
@@ -76,7 +78,7 @@ var updateLinks = function(id) {
   href += '&t=EpicThrills.com is launching soon and I just snagged early exclusive access to extreme adventure trips';
   $("#fb-link").attr('href', href);
   var text = $(".twitter-share-button").attr('src');
-  text = text.replace('&url=http%3A%2F%2Fwww.epicthrills.com', '&url=http%3A%2F%2Fwww.epicthrills.com%3Fr%3D'+id);
+  text = text.replace(/&url=http%3A%2F%2Fwww\.epicthrills\.com(%3Fr%3D[a-zA-Z0-9]{6})*/, '&url=http%3A%2F%2Fwww.epicthrills.com%3Fr%3D'+id);
   $(".twitter-share-button").attr('src', text)
   $("#direct-link").val('http://www.epicthrills.com?r='+id);
 }
@@ -84,6 +86,11 @@ var updateLinks = function(id) {
 var setWelcomeBackText = function() {
   $("#register_form_container .title").html('Welcome back!')
   $("#register_form_container .text").html("The more friends you invite, the sooner you'll get access!")
+}
+
+var setNewText = function() {
+  $("#register_form_container .title").html("Thanks! Want to get an early invitation?")
+  $("#register_form_container .text").html("Invite atleast 3 friends using the link below. The more friends you invite, the sooner you'll get access!")
 }
 
 //Function called on load.

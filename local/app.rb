@@ -106,7 +106,7 @@ get "/submit_form" do
     res = id
     response.set_cookie "ref_id", id
     begin
-      @mailchimp.list_subscribe(@listid, params[:email])
+      @mailchimp.list_subscribe(@listid, params[:email], [], 'html', false)
     rescue
       res = 'exists'
     end
