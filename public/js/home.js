@@ -111,6 +111,7 @@ $(function() {
   //Register fancybox(popup) to the link
   $("a#pre_register_link").fancybox({
     overlayColor: '#000',
+    height: 350,
     overlayOpacity: 0.6
   });
   $("#fancybox-outer").css('background','none repeat scroll 0 0 #000000');

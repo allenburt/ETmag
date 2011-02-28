@@ -229,3 +229,7 @@ p {
   color: #f00;
   text-align: center;
 }
+
+.logo_container {
+  height: 68px;
+}
